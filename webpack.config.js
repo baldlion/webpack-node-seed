@@ -27,6 +27,13 @@ module.exports = {
     ]
   },
 
+  resolve: {
+    extensions: ['.js'],
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  },
+
   plugins: [
     new ShellPlugin({onBuildEnd: ['nodemon dist/app.bundle.js --watch dist']})
   ]
