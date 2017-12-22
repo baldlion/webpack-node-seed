@@ -1,0 +1,37 @@
+{
+  "name": "webpack-node-seed",
+  "version": "0.0.1",
+  "description": "Seed for a Node.js project (ES2016)",
+  "main": "dist/app.bundle.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "webpack",
+    "clean": "rimraf dist",
+    "prestart": "npm run clean",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baldlion/webpack-node-seed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baldlion/webpack-node-seed/issues"
+  },
+  "homepage": "https://github.com/baldlion/webpack-node-seed#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "rimraf": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.1.4",
+    "webpack": "^3.10.0",
+    "webpack-node-externals": "^1.6.0",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
